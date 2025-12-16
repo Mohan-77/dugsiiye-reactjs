@@ -1,17 +1,19 @@
-import { useEffect, useState } from "react"
+
+import Resize from "./Resize"
 
 
 function App() {
-  const[title, setTitle] = useState("Hello, react")
-  const[name, setName] = useState("Mohan")
+  // const[title, setTitle] = useState("Hello, react")
+  // const[name, setName] = useState("Mohan")
 
-  useEffect(() => {
-    document.title = title;
-  },[title])
+  // useEffect(() => {
+  //   document.title = title;
+  // },[title])
 
   return (
     <>
-      <h1>Type to change to the document title</h1>
+    <Resize />
+      {/* <h1>Type to change to the document title</h1>
       <input 
       type="text" 
       value={name}
@@ -22,7 +24,7 @@ function App() {
       type="text" 
       value={title}
       onChange={(e) => setTitle(e.target.value)}
-      />
+      /> */}
       
       
   
