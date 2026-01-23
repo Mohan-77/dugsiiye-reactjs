@@ -1,10 +1,12 @@
 import UseProfile from "./UseProfile";
-import React from "react";
-export default function Navbar({ user }) {
+import React, {useContext} from "react";
+import userContext from "./UserContext.js";
+export default function Navbar() {
+    const user = useContext(userContext);
     return (
         <>
-        <h2>Navbar </h2>
-        <UseProfile user={user} />
+        <h2>my name is {user.name}</h2>
+        <UseProfile />
         </>
     );
 }

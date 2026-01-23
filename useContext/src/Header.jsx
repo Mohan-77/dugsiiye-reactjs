@@ -1,10 +1,11 @@
+
 import Navbar from "./Navbar.jsx";
-import React from "react";
-export default function Header({ user }) {
+
+export default function Header() {
     return (
         <>
         <h2>Header </h2>
-        <Navbar user={user} />
+        <Navbar />
         </>
     );
 }

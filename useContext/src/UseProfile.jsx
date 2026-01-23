@@ -1,5 +1,8 @@
-import React from "react";
-export default function UseProfile({ user }) {
+import React, { useContext } from "react";
+
+import userContext from "./UserContext.js";
+export default function UseProfile() {
+    const user = useContext(userContext);
     return (
         <>
         
