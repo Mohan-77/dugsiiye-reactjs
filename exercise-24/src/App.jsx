@@ -6,7 +6,7 @@ function App() {
   const { register, handleSubmit, formState: { errors }, watch } = useForm();
   const password = watch("password");
   const onSubmit = (data) => {
-    console.log(data);
+    alert(JSON.stringify(data, null, 2));
   };
 
   const styles = {
